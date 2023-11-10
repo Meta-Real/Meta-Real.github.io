@@ -32,12 +32,12 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: yarn
+          cache: npm
       # Docusaurus
       - name: Install Docusaurus dependencies
-        run: yarn install --frozen-lockfile
+        run: npm install --frozen-lockfile
       - name: Build Docusaurus website
-        run: yarn build
+        run: npm build
       # Doxygen  
       - name: Install Doxygen
         run: sudo apt-get update; sudo apt-get install -y doxygen
@@ -57,7 +57,7 @@ jobs:
         uses: actions/upload-pages-artifact@v2
         with:
           # Upload website
-          path: './build'
+          path: './build/'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2

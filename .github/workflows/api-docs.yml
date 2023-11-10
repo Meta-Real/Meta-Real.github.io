@@ -34,6 +34,8 @@ jobs:
       - name: Get MetaReal source code
         run: |
           git clone https://github.com/Meta-Real/MetaReal.git
+      - name: Generate Doxygen files
+        run: |
           cd ./MetaReal
           doxygen ./Doxyfile
       - name: Upload artifact

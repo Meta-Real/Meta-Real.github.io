@@ -71,7 +71,7 @@ const config = {
             label: 'Tutorial',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
-          {to: '/api', label: 'API docs', position: 'left'},
+          {href: 'https://meta-real.github.io/api', label: 'API docs', position: 'left'},
           {
             href: 'https://github.com/Meta-Real/MetaReal',
             label: 'GitHub',

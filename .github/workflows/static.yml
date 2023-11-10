@@ -34,12 +34,13 @@ jobs:
       - name: Get MetaReal source code
         run: |
           git clone https://github.com/Meta-Real/MetaReal.git
-          doxygen ./MetaReal/Doxyfile
+          cd ./MetaReal
+          doxygen ./Doxyfile
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
           # Upload Doxygen docs
-          path: './docs/html'
+          path: './MetaReal/docs/html'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2

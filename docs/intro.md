@@ -4,8 +4,6 @@ sidebar_position: 1
 
 # MetaReal Quickstart
 
-Hello world!
-
 # Tutorial Intro
 
 Let's discover **Docusaurus in less than 5 minutes**.

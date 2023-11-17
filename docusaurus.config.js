@@ -9,8 +9,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'MetaReal',
-  tagline: 'The MetaReal Programming Language',
-  favicon: 'img/favicon.ico',
+  tagline: 'Powerful, Easy-To-Use, and Flexible',
+  favicon: 'img/metareal.ico',
 
   // Set the production url of your site here
   url: 'https://meta-real.github.io',
@@ -20,7 +20,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Metareal', // Usually your GitHub org/user name.
+  organizationName: 'MetaReal', // Usually your GitHub org/user name.
   projectName: 'metareal', // Usually your repo name.
 
   onBrokenLinks: 'throw',
@@ -61,7 +61,7 @@ const config = {
         title: 'MetaReal',
         logo: {
           alt: 'MetaReal Logo',
-          src: 'img/logo.svg',
+          src: 'img/metareal.svg',
         },
         items: [
           {
@@ -70,6 +70,7 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
+          {to: '/install', label: 'Install', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
           {href: 'https://meta-real.github.io/api', label: 'API docs', position: 'left'},
           {

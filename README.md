@@ -1,12 +1,12 @@
 # Meta-Real.github.io
 
-This website is used for hosting documentations and API docs of MetaReal project.
+This website is used for hosting documentations and references of MetaReal project.
 
 https://meta-real.github.io/
 
 Documentations are generated using Docusaurus.
 
-API docs are generated automatically from source code of the project at https://github.com/Meta-Real/MetaReal using Doxygen.
+References are generated automatically from source code of the project at https://github.com/Meta-Real/MetaReal using Doxygen.
 
 ### Installation
 

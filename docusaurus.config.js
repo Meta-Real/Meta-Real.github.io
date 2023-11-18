@@ -68,11 +68,11 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Tutorials',
           },
           {to: '/install', label: 'Install', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
-          {href: 'https://meta-real.github.io/api', label: 'API docs', position: 'left'},
+          {href: 'https://meta-real.github.io/api', label: 'References', position: 'left'},
           {
             href: 'https://github.com/Meta-Real/MetaReal',
             label: 'GitHub',
@@ -84,12 +84,20 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'MetaReal',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Tutorials',
                 to: '/docs/intro',
               },
+              {
+                label: 'Install',
+                to: 'install',
+              },
+              {
+                label: 'References',
+                to: 'https://meta-real.github.io/api',
+              }
             ],
           },
           {

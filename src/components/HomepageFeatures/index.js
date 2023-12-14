@@ -4,32 +4,32 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Powerful',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        MetaReal is designed to harness all the power of the system and CPU.
+        Experience the ultimate performance with MetaReal firsthand.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Easy To Use',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        MetaReal libraries allow you to focus more on your program than the programming concerns.
+        Also, the MetaReal syntax is human-readable and is very effective for large projects.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Flexible',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        MetaReal allows you to customize the compilation process easily for optimized output.
+        Configure the MetaReal and mold it as you wish.
       </>
     ),
   },

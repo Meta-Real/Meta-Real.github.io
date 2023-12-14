@@ -9,7 +9,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'MetaReal',
-  tagline: 'Powerful, Easy-To-Use, and Flexible',
+  tagline: 'Powerful, Easy To Use, and Flexible',
   favicon: 'img/metareal.ico',
 
   // Set the production url of your site here
@@ -134,8 +134,9 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} MetaReal.`,
       },
       prism: {
-        theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
+        theme: prismThemes.vsLight,
+        darkTheme: prismThemes.vsDark,
+        additionalLanguages: ['bash']
       },
     }),
 };

@@ -4,11 +4,18 @@ sidebar_position: 1
 
 # MetaReal Quickstart
 
-# Tutorial Intro
+## Install MetaReal
 
-Let's discover **Docusaurus in less than 5 minutes**.
+First of all, [install](../install) MetaReal. \
+Once you installed it, create a file named `helloworld.mr` and start coding.
 
 ## Getting Started
+
+Write the following code in `helloworld.mr`:
+
+```mr title="helloworld.mr"
+print("Hello World")
+```
 
 Get started by **creating a new site**.
 

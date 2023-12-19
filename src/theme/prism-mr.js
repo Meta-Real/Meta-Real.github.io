@@ -1,8 +1,6 @@
 Prism.languages.metareal = {
 	'comment': {
-		pattern: /(^|[^\\])#.*/,
-		lookbehind: true,
-		greedy: true
+		pattern: /(\#\*(.|\n)*?\*\#|\#.*)/g
 	},
 	'string-interpolation': {
 		pattern: /(?:f|fr|rf)(?:("""|''')[\s\S]*?\1|("|')(?:\\.|(?!\2)[^\\\r\n])*\2)/i,
@@ -28,17 +26,14 @@ Prism.languages.metareal = {
 		}
 	},
 	'triple-quoted-string': {
-		pattern: /(?:[rub]|br|rb)?("""|''')[\s\S]*?\1/i,
-		greedy: true,
+		pattern: /("|')[\s\S]*?\1/g,
 		alias: 'string'
 	},
 	'string': {
-		pattern: /(?:[rub]|br|rb)?("|')(?:\\.|(?!\1)[^\\\r\n])*\1/i,
-		greedy: true
+		pattern: /("|')(?:\\.|(?!\1)[^\\\r\n])*\1/g,
 	},
 	'function': {
-		pattern: /((?:^|\s)def[ \t]+)[a-zA-Z_]\w*(?=\s*\()/g,
-		lookbehind: true
+		pattern: /(print|input|[a-zA-Z_]\w*(?=\s*\())/g
 	},
 	'class-name': {
 		pattern: /(\bclass\s+)\w+/i,
@@ -52,10 +47,10 @@ Prism.languages.metareal = {
 			'punctuation': /\./
 		}
 	},
-	'keyword': /\b(?:_(?=\s*:)|and|as|assert|async|await|break|case|class|continue|def|del|elif|else|except|exec|finally|for|from|global|if|import|in|is|lambda|match|nonlocal|not|or|pass|print|raise|return|try|while|with|yield)\b/,
+	'keyword': /(and)/g,
 	'builtin': /\b(?:__import__|abs|all|any|apply|ascii|basestring|bin|bool|buffer|bytearray|bytes|callable|chr|classmethod|cmp|coerce|compile|complex|delattr|dict|dir|divmod|enumerate|eval|execfile|file|filter|float|format|frozenset|getattr|globals|hasattr|hash|help|hex|id|input|int|intern|isinstance|issubclass|iter|len|list|locals|long|map|max|memoryview|min|next|object|oct|open|ord|pow|property|range|raw_input|reduce|reload|repr|reversed|round|set|setattr|slice|sorted|staticmethod|str|sum|super|tuple|type|unichr|unicode|vars|xrange|zip)\b/,
-	'boolean': /\b(?:False|None|True)\b/,
-	'number': /\b0(?:b(?:_?[01])+|o(?:_?[0-7])+|x(?:_?[a-f0-9])+)\b|(?:\b\d+(?:_\d+)*(?:\.(?:\d+(?:_\d+)*)?)?|\B\.\d+(?:_\d+)*)(?:e[+-]?\d+(?:_\d+)*)?j?(?!\w)/i,
+	'boolean': /(?:False|None|True)/g,
+	'number': /([0-9][0-9_]*\.?|\.)[0-9_]*i?/g,
 	'operator': /[-+%=]=?|!=|:=|\*\*?=?|\/\/?=?|<[<=>]?|>[=>]?|[&|^~]/,
 	'punctuation': /[{}[\];(),.:]/
 };

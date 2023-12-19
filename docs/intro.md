@@ -2,55 +2,90 @@
 sidebar_position: 1
 ---
 
-# MetaReal Quickstart
+# MetaReal QuickStart
 
 ## Install MetaReal
 
-First of all, [install](../install) MetaReal. \
-Once you installed it, create a file named `helloworld.mr` and start coding.
+First, you need to [install](../install) the MetaReal. \
+If you installed the MetaReal correctly, the following command should display the installed compiler version.
+
+```bash
+$ MetaReal --version
+MetaReal compiler version 1.0.0
+MetaReal core verified as mr-core, version 1.0.0
+MetaReal port verified as mr-port, version 1.0.0
+```
+
+Once you installed it, create a file named `start.mr` and start coding your first MetaReal program. \
+By the way, the default MetaReal file extension is '.mr'.
 
 ## Getting Started
 
-Write the following code in `helloworld.mr`:
+We start simple. A program that prints out the `Hello World` message into the terminal.
+The program would be like this. There are no dependencies or libraries and no `main` function. Just one line of code!
 
-```mr title="helloworld.mr"
+```mr title="start.mr"
 print("Hello World")
 ```
 
-Get started by **creating a new site**.
-
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
-
-### What you'll need
-
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
+Now, save the file and go back to the terminal window.
+On Linux or macOS, enter the following commands to compile and run the file:
 
 ```bash
-npm init docusaurus@latest my-website classic
+$ MetaReal start.mr
+$ ./start
+Hello World
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+And on Windows:
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+```batch
+> MetaReal start.mr
+> .\start.exe
+Hello World
+```
 
-## Start your site
+And you have it! The first program that you wrote in MetaReal programming language. \
+There are three essential concepts in this code to consider:
 
-Run the development server:
+1. The MetaReal programming language has no `main` function (even though it's a compiler language). \
+All the written codes are considered part of the `main` function by default (except the definitions). Unless the programmer explicitly wants to violate it.
+2. The `print` function displays a message in the terminal window. \
+It's a built-in function. And you don't have to import any library to use it.
+3. The `"Hello World"` is called a **string**. \
+You can work with textual data via the string data type. We will take a closer look at these objects in later chapters.
+
+## One Step Further
+
+Let's go one step further. A program that gets the user's name and greets them.
+
+```mr title="start.mr"
+name = input("Enter your name: ")
+print("Hello " + name + "!")
+```
+
+Compile and run it like before, and you will see the following result:
 
 ```bash
-cd my-website
-npm run start
+Enter your name: Foo
+Hello Foo!
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+In this example, there were three new things:
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+1. The `input` function gets a string from the user. \
+Also, it prints out the prompt given to it as a parameter. `"Enter your name: "` in this case.
+2. The `name =` part is called a **variable assignment**. \
+It creates a new variable called `name` and stores the result of the `input` function (user's input). You can access the stored data by calling the name of the variable.
+3. The `+` operator concatenates three strings and unifies them into one.
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+We will study these concepts in more detail in later sections! But as for now, you are ready to start learning the MetaReal programming language.
+A summary of what you learned:
+
+* The `print` and the `input` functions
+* The string data type
+* Variable assignment and variable access
+* String concatenation
+* Compiling MetaReal code
+
+Next, we will write a more complicated program and use one of the most useful MetaReal features: The `mpi` or **MetaReal package installer**.

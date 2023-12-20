@@ -14,9 +14,7 @@ Download and install [MSYS2](https://www.msys2.org). \
 Install gcc, cmake, and make in the MSYS2 mingw64 terminal window.
 
 ```bash
-$ pacman -S gcc
-$ pacman -S cmake
-$ pacman -S make
+$ pacman -S gcc cmake make
 ```
 
 The rest of the steps are identical between different operating systems.

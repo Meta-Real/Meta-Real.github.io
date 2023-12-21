@@ -17,7 +17,7 @@ MetaReal port verified as mr-port, version 1.0.0
 ```
 
 Once you installed it, create a file named `start.mr` and start coding your first MetaReal program. \
-By the way, the default MetaReal file extension is '.mr'.
+By the way, the default MetaReal file extension is `.mr`.
 
 ## Getting Started
 
@@ -79,13 +79,13 @@ Also, it prints out the prompt given to it as a parameter. `"Enter your name: "`
 It creates a new variable called `name` and stores the result of the `input` function (user's input). You can access the stored data by calling the name of the variable.
 3. The `+` operator concatenates three strings and unifies them into one.
 
-We will study these concepts in more detail in later sections! But as for now, you are ready to start learning the MetaReal programming language.
+We will study these concepts in more detail in later sections! But as for now, you are ready to start learning the MetaReal programming language. \
 A summary of what you learned:
 
 * The `print` and the `input` functions
 * The string data type
 * Variable assignment and variable access
-* String concatenation
+* String concatenation via the `+` operator
 * Compiling MetaReal code
 
-Next, we will write a more complicated program and use one of the most useful MetaReal features: The `mpi` or **MetaReal package installer**.
+Next, we will introduce one of the most useful MetaReal features: The `mpm` or **MetaReal Package Manager**.

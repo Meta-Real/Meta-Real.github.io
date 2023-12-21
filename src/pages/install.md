@@ -17,7 +17,7 @@ Install gcc, cmake, and make in the MSYS2 mingw64 terminal window.
 $ pacman -S gcc cmake make
 ```
 
-The rest of the steps are identical between different operating systems.
+Rest of the steps are identical between different operating systems.
 
 ### MetaReal Installation
 
@@ -36,7 +36,7 @@ $ cmake ..
 $ make
 ```
 
-Go back to the project directory and run the MetaReal executable file.
+Go back to the project directory and run MetaReal executable file.
 
 ```bash
 $ cd ..

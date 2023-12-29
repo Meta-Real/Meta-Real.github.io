@@ -88,7 +88,7 @@ const config = {
             items: [
               {
                 label: 'Tutorials',
-                to: '/docs/intro',
+                to: '/docs/HelloMetaReal',
               },
               {
                 label: 'Install',

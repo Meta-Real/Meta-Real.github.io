@@ -47,10 +47,10 @@ Prism.languages.metareal = {
 			'punctuation': /\./
 		}
 	},
-	'keyword': /(and)/g,
+	'keyword': /(import)/g,
 	'builtin': /\b(?:__import__|abs|all|any|apply|ascii|basestring|bin|bool|buffer|bytearray|bytes|callable|chr|classmethod|cmp|coerce|compile|complex|delattr|dict|dir|divmod|enumerate|eval|execfile|file|filter|float|format|frozenset|getattr|globals|hasattr|hash|help|hex|id|input|int|intern|isinstance|issubclass|iter|len|list|locals|long|map|max|memoryview|min|next|object|oct|open|ord|pow|property|range|raw_input|reduce|reload|repr|reversed|round|set|setattr|slice|sorted|staticmethod|str|sum|super|tuple|type|unichr|unicode|vars|xrange|zip)\b/,
 	'boolean': /(?:False|None|True)/g,
-	'number': /([0-9][0-9_]*\.?|\.)[0-9_]*i?/g,
+	'number': /([0-9][0-9_]*\.?|\.[0-9_])[0-9_]*i?/g,
 	'operator': /[-+%=]=?|!=|:=|\*\*?=?|\/\/?=?|<[<=>]?|>[=>]?|[&|^~]/,
 	'punctuation': /[{}[\];(),.:]/
 };

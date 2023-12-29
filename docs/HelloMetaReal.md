@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# MetaReal QuickStart
+# Hello MetaReal
 
 ## Install MetaReal
 
@@ -10,7 +10,7 @@ First, you need to [install](../install) MetaReal. \
 If you installed MetaReal correctly, the following command should display the installed compiler version.
 
 ```bash
-$ MetaReal --version
+$ metareal --version
 MetaReal compiler version 1.0.0
 MetaReal core verified as mr-core, version 1.0.0
 MetaReal port verified as mr-port, version 1.0.0
@@ -19,30 +19,30 @@ MetaReal port verified as mr-port, version 1.0.0
 Once you installed it, create a file named `start.mr` and start coding your first MetaReal program. \
 By the way, the default MetaReal file extension is `.mr`.
 
-## Getting Started
+## Say Hello
 
-We start simple. A program that prints out the `Hello World` message into terminal.
+We start simple. A program that prints out the `Hello MetaReal` message into terminal.
 Our program would be like this. There are no dependencies or libraries and no `main` function. Just one line of code!
 
 ```mr title="start.mr"
-print("Hello World")
+print("Hello MetaReal")
 ```
 
 Now, save the file and go back to the terminal window.
 On Linux or macOS, enter the following commands to compile and run the file:
 
 ```bash
-$ MetaReal start.mr
+$ metareal start.mr
 $ ./start
-Hello World
+Hello MetaReal
 ```
 
 And on Windows:
 
 ```batch
-> MetaReal start.mr
-> .\start.exe
-Hello World
+> metareal start.mr
+> .\start
+Hello MetaReal
 ```
 
 And you have it! The first program that you wrote in MetaReal programming language. \
@@ -52,7 +52,7 @@ There are three essential concepts in this code to consider:
 All written codes are considered part of the `main` function by default (except the definitions). Unless the programmer explicitly wants to define it.
 2. The `print` function displays a message in the terminal window. \
 It's a built-in function. And you don't have to import any library to use it.
-3. The `"Hello World"` is called a **string**. \
+3. The `"Hello MetaReal"` is called a **string**. \
 You can work with textual data via string data type. We will take a closer look at these objects in later chapters.
 
 ## One Step Further
@@ -89,4 +89,4 @@ A summary of what you learned:
 * Compiling MetaReal code
 
 Next, we will introduce one of the most useful MetaReal features: \
-`mpm` or **MetaReal Package Manager**.
+**mpm** or **MetaReal Package Manager**.
